@@ -9,11 +9,28 @@ The top level object encapsulating a logical grouping of data and metadata to be
 | status | enum | An overview of the current overall status of the submission [Submission Status](#submission-status) |
 | metadataStatus | enum | Status describing the current state of the submission metadata. [Metadata Status](#metadata-status) |
 | filesStatus | enum | This status summarizes the state of the files associated with this submission. [Files Status](#files-status) |
-| metadata | string | A stringified JSON object with the submission/package level metadata. Must validate against the JSON schema (to be provided) |
+| metadata | string | A stringified JSON object with the submission/package level metadata. Must validate against the JSON schema (to be provided). Note: the metadata blob must always contain user information |
 | files | List[URI] | A list of (Fedora) [File](file.md) objects |
 | accessUrl | URI | A public URL where someone can view this submission. The UI should never write to this field |
 | requiredActions | List[URI] | A list of references to [SubmissionActions](submissionAction.md) that must be addressed by the user |
 | state |  | State for a draft submission that enables the UI to initialize views nicely. _Only_ the UI should read or write this field |
+
+**Notes on metadata blobs**
+
+The submission holds metadata as a stringified JSON object that must validate against our [metadata JSON schema](#). When parsed, the blob should something like:
+
+``` javascript
+{
+  "user": {
+    "email": "holstein@moo.org",
+    "eppn": "",
+    "firstName": "",
+    "lastName": ""
+  },
+  "description": "Some text describing the submission",
+  "moo": 5
+}
+```
 
 ## Submission Status
 
