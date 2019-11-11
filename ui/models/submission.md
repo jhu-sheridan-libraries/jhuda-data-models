@@ -56,7 +56,7 @@ A status summarizing the current state of the submission.
 | requiresAction | One or more metadata fields have been flagged. The user must approve changes to the metadata or make changes to the metadata. This status should take precedence over other metadata statuses | This status is associated with the existence of one or more [SubmissionActions](submissionAction.md) with type `metadata` |
 | approved | The metadata curator has approved the metadata. If a user makes a change to the metadata, the status must change to `draft` | This status must not exist if the submission has one or more [SubmissionActions](submissionAction.md) of type `metadata` |
 
-\* In our current workflow, the metadata curator will only do their curation after the honest broker approves of the set of files attached to the submission. In the workflow, the user will enter metadata, attach files, then let the honest broker that the submission is ready for review. Once the honest broker approves the attached files, the user must use the deposit UI to send the submission over to the archive, where the curator will be able to do their curation tasks.
+\* In our current workflow, the metadata curator will only do their curation after the honest broker approves of the set of files attached to the submission. In the workflow, the user will enter metadata, attach files, then let the honest broker know that the submission is ready for review. Once the honest broker approves the attached files, the user must use the deposit UI to send the submission over to the archive, where the curator will be able to do their curation tasks.
 
 ## Files Status
 
