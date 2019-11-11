@@ -33,7 +33,7 @@ The submission holds metadata as a stringified JSON object that must validate ag
 }
 ```
 
-If the user reqeusts a DOI for the submission, the research will collaborate with the curator in order to get the required metadata. This interaction may happen outside of this deposit UI. If the DOI is _not_ requested, the curator will review and edit package level metadata without collaboration with the user.
+If the user requests a DOI for the submission, the researcher will collaborate with the curator in order to get the required metadata. This interaction may happen outside of this deposit UI. If the DOI is _not_ requested, the curator will review and edit package level metadata without collaboration with the user.
 
 ## Submission Status
 
