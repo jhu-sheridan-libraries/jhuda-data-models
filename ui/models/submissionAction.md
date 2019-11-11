@@ -4,10 +4,10 @@ This describes an action that the user must perform on this submission before it
 
 | Field | Type | Description |
 | ----- | ---- | ----------- |
-| key | string | reference to a file ID or metadata (JSON) key |
+| key | string | reference to a file ID or metadata (JSON) key. |
 | type | enum | <ul><li>`metadata`</li><li>`file`</li></ul> |
-| status | enum | <ul><li>`modified`: the metadata curator has modified the metadata field identified by "`key`"</li><li>`changeRequested`: the metadata curator or honest broker identified a metadata field or file that must be changed</li></ul> |
-| details | string | Human readable description of the action that must be performed by the submitter. For example, the honest broker will enter a description of what needs to change in a flagged file |
+| status | enum | <ul><li>`modified`: the metadata curator has modified the metadata field identified by "`key`."</li><li>`changeRequested`: the metadata curator or honest broker identified a metadata field or file that must be changed.</li></ul> |
+| details | string | Human readable description of the action that must be performed by the submitter. For example, the honest broker will enter a description of what needs to change in a flagged file. |
 
 ## Example
 
