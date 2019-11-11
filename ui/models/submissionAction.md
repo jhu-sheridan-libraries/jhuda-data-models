@@ -1,6 +1,6 @@
 # Submission Action
 
-This describes an action that the user must perform on this submission before it can be accepted. The honest broker or metadata curator will do their work and create these objects where necessary to inform the user that they must do something.
+This describes an action that the user must perform on this submission before it can be accepted, or identifies changes made by the honest broker or curator. The honest broker or metadata curator will do their work and create these objects where necessary to inform the user that they must do something.
 
 | Field | Type | Description |
 | ----- | ---- | ----------- |
