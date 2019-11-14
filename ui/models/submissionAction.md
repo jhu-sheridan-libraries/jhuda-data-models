@@ -5,6 +5,7 @@ This describes an action that the user must perform on this submission before it
 | Field | Type | Description |
 | ----- | ---- | ----------- |
 | key | string | reference to a file ID or metadata (JSON) key. |
+| proposedValue | string | This property will hold a new value for the metadata field (`key`) proposed by the metadata curator. This value must be approved by the submitter for the new value to be saved in the submission metadata. |
 | type | enum | <ul><li>`metadata`</li><li>`file`</li></ul> |
 | status | enum | <ul><li>`modified`: the metadata curator has modified the metadata field identified by "`key`."</li><li>`changeRequested`: the metadata curator or honest broker identified a metadata field or file that must be changed.</li></ul> |
 | details | string | Human readable description of the action that must be performed by the submitter. For example, the honest broker will enter a description of what needs to change in a flagged file. |
@@ -16,6 +17,7 @@ Assume that the user filled out metadata on the submission and included a key-va
 ``` javascript
 {
   “key”: “foo”,
+  "proposedValue": "Bar 2",
   “type”: “metadata”,
   “status”: “modified”,
   “details”: “Changed ‘bar’ to ‘Bar 2’ because it was fun”
