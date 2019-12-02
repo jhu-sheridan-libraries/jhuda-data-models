@@ -7,6 +7,7 @@ This object is intended to hold only metadata describing a file, including a ref
 | **id** | URI | Object ID in Fedora. |
 | **name** | string | a filename |
 | externalId | string | external reference to the file, if not a direct upload. This must be the file's OneDrive ID if the file was picked from the users OneDrive. |
+| downloadUrl | URI | Required only for files where `origin === 'onedrive'`. The short-lived link that can be used to download the file |
 | description | string | (Optional) human readable description of the file, provided by the user in the UI. |
 | **origin** | enum | <ul><li>`upload`: direct user upload.</li><li>`onedrive`: file was picked from the user's OneDrive.</li></ul> |
 | checksum | string | checksum calculated for a file. |
