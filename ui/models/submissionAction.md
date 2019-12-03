@@ -7,7 +7,7 @@ This describes an action that the user must perform on this submission before it
 | key | string | reference to a file ID or metadata (JSON) key. |
 | type | enum | <ul><li>`metadata`</li><li>`file`</li></ul> |
 | status | enum | <ul><li>`modified`: the metadata curator has modified the metadata field identified by "`key`."</li><li>`changeRequested`: the metadata curator or honest broker identified a metadata field or file that must be changed.</li></ul> |
-| details | string | Human readable description of the action that must be performed by the submitter. For example, the honest broker will enter a description of what needs to change in a flagged file. |
+| description | string | Human readable description of the action that must be performed by the submitter. For example, the honest broker will enter a description of what needs to change in a flagged file. |
 
 ## Example
 
@@ -18,6 +18,6 @@ Assume that the user filled out metadata on the submission and included a key-va
   “key”: “foo”,
   “type”: “metadata”,
   “status”: “modified”,
-  “details”: “Changed ‘bar’ to ‘Bar 2’ because it was fun”
+  “description”: “Changed ‘bar’ to ‘Bar 2’ because it was fun”
 }
 ```
