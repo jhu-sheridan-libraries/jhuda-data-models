@@ -6,4 +6,4 @@ See individual object pages for detailed descriptions.
 * [File](models/file.md)
 * [SubmissionAction](models/submissionAction.md)
 
-These objects rely on a [JSON-LD context]() to convert JSON to JSON-LD.
+These objects rely on a [JSON-LD context](context/) to convert JSON to JSON-LD.

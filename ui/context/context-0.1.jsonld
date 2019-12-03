@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "jhuda": "https://archive.library.jhu.edu/ns#",
+    "xsd": "https://www.w3.org/2001/XMLSchema#",
+
+    "Submission": "pass:Submission",
+    "File": "pass:File",
+    "SubmissionAction": "pass:SubmissionAction",
+
+    "user": {"@id": "pass:user"},
+    "status": {"@id": "pass:status"},
+    "metadataStatus": {"@id": "pass:metadataStatus"},
+    "filesStatus": {"@id": "pass:filesStatus"},
+    "metadata": {"@id": "pass:metadata"},
+    "files": {"@id": "pass:files", "@type": "@id", "@container": "@set"},
+    "accessUrl": {"@id": "pass:accessUrl"},
+    "requiredActions": {"@id": "pass:requiredActions", "@type": "@id", "@container": "@set"},
+    "state": {"@id": "pass:state"},
+    "name": {"@id": "pass:name"},
+    "origin": {"@id": "pass:origin"},
+    "description": {"@id": "pass:description"},
+    "externalId": {"@id": "pass:externalId"},
+    "downloadUrl": {"@id": "pass:downloadUrl"},
+    "externalPath": {"@id": "pass:externalPath"},
+    "checksum": {"@id": "pass:checksum"},
+    "checksumFunction": {"@id": "pass:checksumFunction"},
+    "size": {"@id": "pass:size", "@type": "xsd:integer"},
+    "location": {"@id": "pass:location"},
+    "key": {"@id": "pass:key"},
+    "type": {"@id": "pass:type"}
+  }
+}
