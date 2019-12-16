@@ -24,7 +24,7 @@
     "externalPath": {"@id": "pass:externalPath"},
     "checksum": {"@id": "pass:checksum"},
     "checksumFunction": {"@id": "pass:checksumFunction"},
-    "size": {"@id": "pass:size", "@type": "xsd:integer"},
+    "size": {"@id": "pass:size", "@type": "xsd:long"},
     "location": {"@id": "pass:location"},
     "key": {"@id": "pass:key"},
     "type": {"@id": "pass:type"}
